@@ -1,3 +1,6 @@
+
+/* Manoj's part************************************************************************************************** */
+
 * {
   margin: 0;
   padding: 0;
@@ -258,3 +261,196 @@ background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
 }
 
 
+/* Ranajit's part************************************************************************************* */
+
+
+/* part3 div 1  */
+.part3row1{
+  background-color: rgb(255, 255, 255);
+  padding: 0.3rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.part3row1>h2{
+  background-color: inherit;
+}
+.part3row1>div{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  /* flex-wrap: wrap; */
+  align-content: space-around;
+
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  
+}
+
+.part3row1>div>div{
+  height: 14rem;
+  width: auto;
+}
+.part3row1>div>div>img{
+  max-width: 10rem;
+  height: inherit;
+}
+
+/* part3 div2 */
+
+.part3d1{
+  display: grid;
+  gap: 1rem;
+  margin: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.part3d2{
+display: flex;
+flex-direction: column;
+width: 22rem;
+height: 26rem;
+background-color: white;
+}
+.part3d2>p,
+.part3d2>h2{
+  background-color: white;
+  padding: 0 0.6rem;
+}
+
+#ppppp{
+  margin-top: -0.5rem;
+  min-height:14rem ;
+  min-width: 20rem;
+  
+}
+
+
+/* ----------------------- */
+
+.part3d3{
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+.part3d3>figure{
+ margin: 0.3rem;
+
+}
+.part3d3>figure>p{
+  margin: 0;
+  background-color: white !important;;
+}
+
+.part3d3>figure>img{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* last part */
+
+.part3LastPart{
+  margin: 1rem 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.part3LastPart>button{
+  background-color: rgb(255, 183, 2);
+  width: 15rem;
+  border-radius: 0.3rem;
+  border: none;
+  height: 2rem;
+  cursor: pointer;
+}
+.part3LastPart>p,
+.part3LastPart>h2{
+  background-color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.part3row1{
+  display: flex;
+  background-color: white;
+  padding: 30px 10px;
+  position: relative;
+}
+
+.slidingp3{
+  display: flex;
+  height: 200px;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.slidingp3 img{
+  padding-bottom: 10px;
+  margin: 0 10px ;
+  height: 100%;
+  cursor: pointer;
+}
+
+.part3row1 .arrow{
+position: absolute;
+background-color: rgba(255, 255, 255, 0.461);
+height: 100px;
+width: 50px;
+display: none;
+align-items: center;
+justify-content: center;
+margin-top: 40px;
+
+}
+
+.part3row1:hover .arrow{
+  display: flex;
+}
+
+.part3row1 .arrow:hover{
+  border: 3px solid #3e8bff;
+}
+
+.part3row1 .prev{
+  left: 0;
+}
+.part3row1 .next{
+  right: 0;
+}
+
+.part3row1 .arrow img{
+  width: 40px;
+}
+
+.slidingp3::-webkit-scrollbar{
+  height: 7px;
+}
+.slidingp3::-webkit-scrollbar-thumb{
+  background-color: #fff;
+  border-radius: 8px;
+}
+.part3row1:hover .slidingp3::-webkit-scrollbar-thumb{
+  background-color: rgb(179, 179, 179);
+}
