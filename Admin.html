@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickCart Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color:rgb(8, 87, 73);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav {
+            flex: 1;
+            min-width: 250px;
+            background-color: #343a40;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main {
+            flex: 3;
+            padding: 20px;
+            min-width: 700px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f4f4f4;
+        }
+        button {
+            padding: 5px 10px;
+            background-color:yellow;
+            color:black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:yellowgreen;
+        }
+        input[type="file"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>QuickCart Admin Panel</h1>
+</header>
+
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#product-management">Product Management</a></li>
+            <li><a href="#order-management">Order Management</a></li>
+            <li><a href="#user-management">User Management</a></li>
+            <li><a href="#category-management">Category Management</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <!-- Dashboard Section -->
+        <div id="dashboard" class="card">
+            <h2>Dashboard</h2>
+            <p>Total Products: 150</p>
+            <p>Total Orders: 200</p>
+        </div>
+
+        <!-- Product Management Section -->
+        <div id="product-management" class="card">
+            <h2>Product Management</h2>
+            <button>Add Product</button>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Product A</td>
+                    <td>$10</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+            <label>Upload Product Image</label>
+            <input type="file" name="productImage">
+        </div>
+
+        <!-- Order Management Section -->
+        <div id="order-management" class="card">
+            <h2>Order Management</h2>
+            <table>
+                <tr>
+                    <th>Order ID</th>
+                    <th>User</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>User A</td>
+                    <td>Pending</td>
+                    <td>
+                        <button>Update Status</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- User Management Section -->
+        <div id="user-management" class="card">
+            <h2>User Management</h2>
+            <table>
+                <tr>
+                    <th>User ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>John Doe</td>
+                    <td>
+                        <button>Deactivate</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Category Management Section -->
+        <div id="category-management" class="card">
+            <h2>Category Management</h2>
+            <button>Add Category</button>
+            <table>
+                <tr>
+                    <th>Category ID</th>
+                    <th>Category Name</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td>301</td>
+                    <td>Electronics</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
