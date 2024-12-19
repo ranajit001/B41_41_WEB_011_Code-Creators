@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quick Cart</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="header-styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" 
   />
 </head>
@@ -14,15 +14,32 @@
   <div class="header-top">
     
 <header class="navbar">
-  <!-- Amazon Logo -->
+  <!--  Logo -->
   <div class="logo-section">
     <span class="logo"><a href="#"><img src="C:\Users\ADMIN\Desktop\CODE\ProjectRepo-1\B41_41_WEB_011_Code-Creators\logo.png" class="logo" length=75% width=50%></a></span>
   </div> 
-  <div class="delivery"> 
+  <div class="dropdown-container"> 
     <i class="fa-solid fa-location-dot"></i>
-    <button class="deliver">
-      Deliver to <br>     
-    </button><br>
+    <span class="deliver">
+      Deliver to &#11167;   
+    </span>
+    <div class="dropdown">
+      <div class="dropdown-column">
+        <select name="countries" id="countries">
+        <h4>List of Countries</h4>
+        <option value=""><a href="#">Australia</a></option>
+        <option value=""><a href="#">Brazil</a></option>
+        <option value=""><a href="#">China</a></option><a href="#">China</a>
+        <option value=""><a href="#">Denmark</a></option><a href="#">Denmark</a>
+        <option value=""><a href="#">Estonia</a></option>
+        <option value=""><a href="#">Finland</a></option>
+        <option value=""><a href="#">Germany</a></option>
+        <option value=""><a href="#">Hungary</a></option>
+        <option value=""><a href="#">India</a></option>
+        <option value=""><a href="#">Japan</a></option>
+      </select>
+      </div>
+    </div>  
   </div>
 
   <!-- Search Bar -->
@@ -112,5 +129,19 @@
     </ul>
   </nav>
 </header>
+
+<!-- Background image -->
+<div class="hero">
+  <div class="hero-content">
+    <img src="https://m.media-amazon.com/images/I/51M4JArk-yL._SX1500_.jpg" alt="Background Image" class="background-image">
+  <!-- </div>
+  <div class="buttons">
+    <div class="left"><button><i style='font-size:24px' class='fas'>&#xf053;</i></button></div>
+    <div class="right"><button><i style='font-size:24px' class='fas'>&#xf054;</i></button></div>
+  </div> -->
+</div>
+
+
+
 </body>
 </html>
