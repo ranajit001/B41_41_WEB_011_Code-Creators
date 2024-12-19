@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quick Cart</title>
-  <link rel="stylesheet" href="header-styles.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" 
   />
 </head>
@@ -16,17 +16,17 @@
 <header class="navbar">
   <!--  Logo -->
   <div class="logo-section">
-    <span class="logo"><a href="#"><img src="C:\Users\ADMIN\Desktop\CODE\ProjectRepo-1\B41_41_WEB_011_Code-Creators\logo.png" class="logo" length=75% width=50%></a></span>
+    <span class="logo"><a href="#"><img src="https://drive.google.com/file/d/1ETBym2Yli9ZzxCkadXS2QukzJNHXvCLv/view?usp=sharing" class="logo" length=75% width=50%></a></span>
   </div> 
   <div class="dropdown-container"> 
-    <i class="fa-solid fa-location-dot"></i>
+    <i class="fa-solid fa-location-dot"></i> <br>
     <span class="deliver">
-      Deliver to &#11167;   
+      Deliver to  &#11167;   
     </span>
     <div class="dropdown">
       <div class="dropdown-column">
-        <select name="countries" id="countries">
-        <h4>List of Countries</h4>
+        <select name="countries" id="countries">       
+        <option value=""><h4>List of Countries</h4></option>
         <option value=""><a href="#">Australia</a></option>
         <option value=""><a href="#">Brazil</a></option>
         <option value=""><a href="#">China</a></option><a href="#">China</a>
@@ -104,7 +104,6 @@
         </div>
       </div>
     </div>
-
     <!-- container -->
     <div class="dropdown-container">
       <span class="nav-item">Returns & Orders</span>
@@ -129,19 +128,18 @@
     </ul>
   </nav>
 </header>
-
-<!-- Background image -->
 <div class="hero">
-  <div class="hero-content">
-    <img src="https://m.media-amazon.com/images/I/51M4JArk-yL._SX1500_.jpg" alt="Background Image" class="background-image">
-  <!-- </div>
-  <div class="buttons">
-    <div class="left"><button><i style='font-size:24px' class='fas'>&#xf053;</i></button></div>
-    <div class="right"><button><i style='font-size:24px' class='fas'>&#xf054;</i></button></div>
-  </div> -->
+  <div class="slides">
+    <img src="https://m.media-amazon.com/images/I/71w+qp51UyL._SX3000_.jpg" class="slide" alt="Image 1">
+    <img src="https://m.media-amazon.com/images/I/71VcGrxQRBL._SX3000_.jpg" class="slide" alt="Image 2">
+    <img src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg" class="slide" alt="Image 3">
+    <img src="https://m.media-amazon.com/images/I/71CtV-IknvL._SX3000_.jpg" class="slide" alt="Image 4">
+    <img src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg" class="slide" alt="Image 5">
+  </div>
+  <button class="arrow left">&lt;</button>
+  <button class="arrow right">&gt;</button>
 </div>
-
-
-
+<script src="index.js"></script>
 </body>
 </html>
+

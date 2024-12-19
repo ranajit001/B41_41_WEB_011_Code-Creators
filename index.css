@@ -1,205 +1,260 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: #f3f3f3;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-  /* Header Styles */
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(to right, rgb(3, 68, 1), rgb(3, 134, 3));
-    color: white;
-    padding: 0%;
-    position: relative;
-  }
-  
-  .logo-section img{
-    display: inline-block;
-    height: 75px;
-    width: 100px;
-    margin: 0px 15px
-  }
+body {
+  background-color: #f3f3f3;
+}
 
 
-  .deliver {
-    font-size: 25px;
-    color: white;
-    display: flex;
-    align-items: center;
-  }
-  .deliver:hover {
-    display: block;
-    border: 1px solid white;
-  }
-  
-  /* Search Bar */
-  .search-section {
-    display: flex;
-    flex-grow: 1;
-    margin: 0 60px;
-  }
-  
-  .search-section select,
-  .search-section input,
-  .search-section button {
-    padding: 10px;
-    border: none;
-    outline: none;
-  }
-  
-  .search-section select {
-    border-radius: 5px 0 0 5px;
-    margin: 0%;
-  }
-  
-  .search-section input {
-    flex-grow: 1;
-  }
-  
-  .search-section button {
-    background-color: #febd69;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-  }
-  
-  /* Navigation Links */
-  .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-  
-  /* Dropdown Container */
-  .dropdown-container {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .nav-item {
-    padding: 10px;
-  }
-  
-  .nav-item:hover {
-    background-color: none;
-    border: 1px solid white;
-  }
-  
-  /* Dropdown Menu */
-  .dropdown {
-    display: none; 
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    min-width: 200px;
-    z-index: 10;
-  }
+/* Header Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, rgb(46, 73, 46), rgb(40, 80, 40));
+  color: white;
+  padding: 0%;
+  position: relative;
+}
 
-  .dropdown-container{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .dropdown-column h4 {
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #00453e;
-  }
-  
-  .dropdown a {
-    display: block;
-    text-decoration: none;
-    color: black;
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  
-  .dropdown a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Hover Effect to Show Dropdown */
-  .dropdown-container:hover .dropdown {
-    display: block;
-    border: 1px solid white;
-  }
-  
-  
+.logo-section img{
+  display: inline-block;
+  height: 75px;
+  width: 100px;
+  margin: 0px 15px
+}
+
+
+.deliver {
+  font-size: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.deliver:hover {
+  display: block;
+  border: 1px solid white;
+}
+
+/* Search Bar */
+.search-section {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 60px;
+}
+
+.search-section select,
+.search-section input,
+.search-section button {
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-section select {
+  border-radius: 5px 0 0 5px;
+  margin: 0%;
+}
+
+.search-section input {
+  flex-grow: 1;
+}
+
+.search-section button {
+  background-color: #febd69;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Dropdown Container */
+.dropdown-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.nav-item:hover {
+  background-color: none;
+  border: 1px solid white;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 200px;
+  z-index: 10;
+}
+
+.dropdown-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.dropdown-column h4 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #00453e;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.dropdown a:hover {
+  text-decoration: underline;
+}
+
+/* Hover Effect to Show Dropdown */
+.dropdown-container:hover .dropdown {
+  display: block;
+  border: 1px solid white;
+}
+
+
 
 .second-block{
-  display: flex;
+display: flex;
 }
 
 /* header-bottom */
 
 .header-bottom {
-  background-color: #014105; 
-  color: white;
+background-color: #014105; 
+color: white;
 }
 
 .menu {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 10px 20px;
+display: flex;
+gap: 20px;
+list-style: none;
+margin: 0;
+padding: 10px 20px;
 }
 
 .menu li {
-  cursor: pointer;
-  position: relative;
+cursor: pointer;
+position: relative;
 }
 
 .menu li:hover {
-  background-color: none;
-  border: 1px solid white;
+background-color: none;
+border: 1px solid white;
 }
 
 /* Background image- hero section */
+
+
+/* Container */
+.hero {
+position: relative;
+width: 100%;
+height: 500px;
+overflow: hidden;
+background-color: #ccc; 
+}
+
+/* Arrow Buttons */
+.arrow {
+position: absolute;
+top: 20%;
+transform: translateY(-50%);
+width: 50px; 
+height: 50px; 
+background: rgba(0, 0, 0, 0.4); 
+color: white;
+font-size: 1.5rem;
+font-weight: bold;
+border: none;
+border-radius: 50%;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 2;
+transition: background 0.3s ease;
+}
+
+/* Left Arrow */
+.left{
+left: 20px; /* Position on the left side */
+}
+
+/* Right Arrow */
+.right {
+right: 20px; /* Position on the right side */
+}
+
+/* Hover Effect */
+.arrow:hover {
+background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+/* hero section */
 .hero {
   position: relative;
   width: 100%;
-  height: 300px; /* Adjust height as needed */
+  height: 500px;
   overflow: hidden;
-  background-color: red; /* Fallback color */
+  background-color: #ccc;
 }
 
-.background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
-}
-
-.hero-content h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  text-align: center;
-}
-
-
-/* Arrow Buttons */
-/* .buttons{
+.slides {
   display: flex;
-  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
 }
-.left{
-  left: 20px; 
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adjusts the image for the best fit */
 }
-.right-arrow {
-  right: 20px; 
-} */
+
+.arrow {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+
