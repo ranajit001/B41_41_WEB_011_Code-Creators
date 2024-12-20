@@ -14,3 +14,30 @@ function showSlide(index) {
 leftArrow.addEventListener("click", () => showSlide(currentIndex - 1));
 rightArrow.addEventListener("click", () => showSlide(currentIndex + 1));
 showSlide(currentIndex);
+
+// ******************************************************************************
+let products = document.querySelectorAll(".slidingp3");
+let prevButtons = document.querySelectorAll(".part3row1 .prev");
+let nextButtons = document.querySelectorAll(".part3row1 .next");
+
+let scrollStep = 700;
+let scrollSpeed = 300;
+
+prevButtons.forEach((prev, index) => {
+    prev.addEventListener("click", () => {
+        products[index].scrollBy({
+            left: -scrollStep,
+            behavior: "smooth"
+        });
+    });
+});
+
+nextButtons.forEach((next, index) => {
+    next.addEventListener("click", () => {
+        products[index].scrollBy({
+            left: scrollStep,
+            behavior: "smooth"
+        });
+    });
+});
+
