@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Sign In</title>
+    <link rel="icon" href="Favicon.jpg" style="height: 80px;">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #007185; /* Blue */
+            margin-bottom: 20px;
+        }
+        /* Form Fields */
+        .form-group {
+            margin: 10px 0;
+        }
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #ffd814; /* Yellow */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #111;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #f7ca00;
+        }
+        .footer {
+            margin-top: 15px;
+            font-size: 12px;
+            text-align: center;
+            color: #555;
+        }
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Admin Sign In</div>
+        <form id="signin-form">
+            <div class="form-group">
+                <label for="admin-key">Admin Key</label>
+                <input type="text" id="admin-key" name="admin-key" placeholder="Enter special admin key" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+        <div class="footer">
+            Don't have an account? <a href="signUpAdmin.html">Sign Up</a>
+        </div>
+        <div class="error-message" id="error-message"></div>
+    </div>
+
+    <script>
+        document.getElementById("signin-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const adminKey = document.getElementById("admin-key").value;
+            const password = document.getElementById("password").value;
+
+            const existingAdmin = JSON.parse(localStorage.getItem("admin"));
+
+            if (existingAdmin) {
+                if (adminKey === existingAdmin.adminKey && password === existingAdmin.password) {
+                    // Successful login
+                    window.location.href = "Admin.html"; // Redirect to Admin page
+                } else {
+                    // Incorrect credentials
+                    document.getElementById("error-message").textContent = "Invalid admin key or password!";
+                }
+            } else {
+                document.getElementById("error-message").textContent = "No admin account found!";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -12,126 +12,131 @@
 </head>
 <body>
  <!-- First Header -->
- <header class="header">
-  <div class="header-top">
-    
-<header class="navbar">
-  <!--  Logo -->
-  <div class="logo-section">
-    <span class="logo"><a href="#"><img src="logo.png" class="logo" ></a></span>
-  </div> 
-  <div class="dropdown-container">  
-    <i class="fa-solid fa-location-dot"></i> <br><pre> </pre>
-    <span class="deliver">
-        Deliver to <br>  India   
-      </span><br>
+<header class="header">
+    <div class="header-top">
       
+  <header class="navbar">
+    <!-- Logo -->
+    <div class="logo-section">
+      <span class="logo"><a href="#"><img src="logo.png" class="logo" ></a></span>
+    </div> 
+    <div class="dropdown-container">  
+      <i class="fa-solid fa-location-dot"></i> <br><pre> </pre>
+      <span class="deliver" id="deliver-to">
+          Deliver to    <span id="username"></span>   
+      </span><br>
     </div>
-
-  <!-- Search Bar -->
-  <div class="search-section">
-    <select>
-      <option>All</option>
-      <option>Arts & Crafts</option>
-      <option>Baby</option>
-      <option>Beauty & Personal Care</option>
-      <option>Boys Fashion</option>
-      <option>Books</option>
-      <option>Computer</option>
-      <option>Deals</option>
-      <option>Digital Music</option>
-      <option>Electronics</option>
-      <option>Girl's Fashion</option>
-      <option>Health & Household</option>
-      <option>Home & Kitchen</option>
-      <option>Industry & Scientific</option>
-      <option>Kindle Store</option>
-      <option>Luggage</option>
-      <option>Men's Fashion</option>
-      <option>Movies & TV</option>
-      <option>Music, CDs & Vinyl</option>
-      <option>Pet Supplies</option>
-      <option>Prime Video</option>
-      <option>Software</option>
-      <option>Sports & Outdoors</option>
-      <option>Tools & Home Improvement</option>
-      <option>Toys & Games</option>
-      <option>Video Games</option>
-      <option>Women's Fashion</option>
-    </select>
-    <input type="text" placeholder="Search Quick Cart">
-    <button>🔍</button>
-  </div>
-
-  <!-- Navigation Links -->
-  <div class="nav-links">
-
-    <div class="dropdown-container">
-      <span class="nav-item">Account & Lists &#11167;</span>
-      <div class="dropdown">
-        <div class="dropdown-column">
-          <h4>Your Lists</h4>
-          <a href="#">Create a List</a>
-          <a href="#">Find a List or Registry</a>
-        </div>
-        <div class="dropdown-column">
-          <h4>Your Account</h4>
-          <a href="./signin.html">Account</a>
-          <a href="./Admin.html">Admin</a>
-          <a href="#">Orders</a>
-          <a href="#">Recommendations</a>
-          <a href="#">Browsing History</a>
-          <a href="#">Watchlist</a>
-          <a href="#">Video Purchases & Rentals</a>
-          <a href="#">Kindle Unlimited</a>
-          <a href="#">Content & Devices</a>
-          <a href="#">Subscribe & Save Items</a>
-          <a href="#">Memberships & Subscriptions</a>
-          <a href="#">Music Library</a>
+  
+    <!-- Search Bar -->
+    <div class="search-section">
+      <select>
+        <option>All</option>
+        <option>Arts & Crafts</option>
+        <option>Baby</option>
+        <option>Beauty & Personal Care</option>
+        <option>Boys Fashion</option>
+        <option>Books</option>
+        <option>Computer</option>
+        <option>Deals</option>
+        <option>Digital Music</option>
+        <option>Electronics</option>
+        <option>Girl's Fashion</option>
+        <option>Health & Household</option>
+        <option>Home & Kitchen</option>
+        <option>Industry & Scientific</option>
+        <option>Kindle Store</option>
+        <option>Luggage</option>
+        <option>Men's Fashion</option>
+        <option>Movies & TV</option>
+        <option>Music, CDs & Vinyl</option>
+        <option>Pet Supplies</option>
+        <option>Prime Video</option>
+        <option>Software</option>
+        <option>Sports & Outdoors</option>
+        <option>Tools & Home Improvement</option>
+        <option>Toys & Games</option>
+        <option>Video Games</option>
+        <option>Women's Fashion</option>
+      </select>
+      <input type="text" placeholder="Search Quick Cart">
+      <button>🔍</button>
+    </div>
+  
+    <!-- Navigation Links -->
+    <div class="nav-links">
+  
+      <div class="dropdown-container">
+        <span class="nav-item">Account & Lists &#11167;</span>
+        <div class="dropdown">
+          <div class="dropdown-column">
+            <h4>Your Lists</h4>
+            <a href="#">Create a List</a>
+            <a href="#">Find a List or Registry</a>
+          </div>
+          <div class="dropdown-column">
+            <h4>Your Account</h4>
+            <a href="#" id="admin-link">Admin</a>
+            <a href="#">Orders</a>
+            <a href="#">Recommendations</a>
+            <a href="#">Browsing History</a>
+            <a href="#">Watchlist</a>
+            <a href="#">Video Purchases & Rentals</a>
+            <a href="#">Kindle Unlimited</a>
+            <a href="#">Content & Devices</a>
+            <a href="#">Subscribe & Save Items</a>
+            <a href="#">Memberships & Subscriptions</a>
+            <a href="#">Music Library</a>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- container -->
-    <div class="dropdown-container">
-      <span class="nav-item">Returns & Orders</span>
-    </div>
-
-    <!-- Cart -->
-    <div class="dropdown-container">
-        <span class="nav-item">
-            <a href="cart.html" class="cart-link">🛒Cart</a>
+      <!-- container -->
+      <div class="dropdown-container">
+        <span class="nav-item">Returns & Orders</span>
+      </div>
+  
+      <!-- Profile Section -->
+      <div class="dropdown-container" id="profile-section">
+          <span class="nav-item">
+              <a href="#" id="profile-link">
+                  <img src="https://cdn-icons-png.freepik.com/256/17740/17740782.png?ga=GA1.1.1110972629.1727678649&semt=ais_hybrid" alt="Profile" class="profile-icon" style="height: 30px ;width: 30px;"> 
+              </a>
           </span>
+      </div>
+  
+      <!-- Cart -->
+      <div class="dropdown-container">
+          <span class="nav-item">
+              <a href="cart.html" class="cart-link">🛒Cart</a>
+            </span>
+      </div>
     </div>
-  </div>
-  </div>
-
-  <!-- Second Header -->
-  <nav class="header-bottom">
-    <ul class="menu">
-      <li><i class="fa-solid fa-bars"></i> All</li>
-      <li>Today's Deals</li>
-      <li>Customer Service</li>
-      <li>Registry</li>
-      <li>Gift Cards</li>
-      <li>Sell</li>
-    </ul>
-  </nav>
-</header>
-
-
-<div class="hero">
-    
-  <div class="slides">
-    <img src="https://m.media-amazon.com/images/I/71CtV-IknvL._SX3000_.jpg" class="slide" alt="Image 4">
-    <img src="https://m.media-amazon.com/images/I/71w+qp51UyL._SX3000_.jpg" class="slide" alt="Image 1">
-    <img src="https://m.media-amazon.com/images/I/71VcGrxQRBL._SX3000_.jpg" class="slide" alt="Image 2">
-    <img src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg" class="slide" alt="Image 3">
-    <img src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg" class="slide" alt="Image 5">
-  </div>
-  <button class="arrow left">&lt;</button>
-  <button class="arrow right">&gt;</button>
-</div>
-
+    </div>
+  
+    <!-- Second Header -->
+    <nav class="header-bottom">
+      <ul class="menu">
+        <li><i class="fa-solid fa-bars"></i> All</li>
+        <li>Today's Deals</li>
+        <li>Customer Service</li>
+        <li>Registry</li>
+        <li>Gift Cards</li>
+        <li>Sell</li>
+      </ul>
+    </nav>
+  </header>
+  </header>
+  
+  <div class="hero">
+    <div class="slides">
+      <img src="https://m.media-amazon.com/images/I/71CtV-IknvL._SX3000_.jpg" class="slide" alt="Image 4">
+      <img src="https://m.media-amazon.com/images/I/71w+qp51UyL._SX3000_.jpg" class="slide" alt="Image 1">
+      <img src="https://m.media-amazon.com/images/I/71VcGrxQRBL._SX3000_.jpg" class="slide" alt="Image 2">
+      <img src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg" class="slide" alt="Image 3">
+      <img src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg" class="slide" alt="Image 5">
+    </div>
+    <button class="arrow left">&lt;</button>
+    <button class="arrow right">&gt;</button>
+  </div>  
 
 <!-- ****************************************************************************************************************************** -->
 <!-- Ranajit's part  -->
