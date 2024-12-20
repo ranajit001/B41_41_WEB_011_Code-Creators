@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickcart Profile</title>
+    <link rel="icon" href="Favicon.jpg" style="height: 80px;">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            font-size: 28px;
+            font-weight: bold;
+            color: #007185;
+            margin-bottom: 20px;
+        }
+        .user-details {
+            margin-bottom: 20px;
+        }
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Welcome to Your Profile!</div>
+
+        <div class="user-details" id="user-details">
+            <!-- User details will be displayed here -->
+        </div>
+
+        <div class="product-list">
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71SuWxoMewL._SX522_.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41pcgq-l9ML._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$20.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51uVasVR9lL._SX679_.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$30.99</p>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="signin.html" style="list-style: none; text-decoration: none; color: black;">Sign out</a>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    // Get the user data from localStorage
+const userData = JSON.parse(localStorage.getItem("user"));
+
+// Check if user is logged in
+if (userData) {
+    // Display the user details
+    const userDetails = document.getElementById("user-details");
+    userDetails.innerHTML = `
+        <h2>Hello, ${userData.name}</h2>
+        <p>Email: ${userData.email}</p>
+    `;
+} else {
+    // Redirect to the sign-in page if no user is found in localStorage
+    window.location.href = "signin.html";
+}
+</script>

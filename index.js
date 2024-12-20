@@ -41,3 +41,27 @@ nextButtons.forEach((next, index) => {
     });
 });
 
+window.onload = function() {
+    // Check if user data exists in localStorage
+    const userData = JSON.parse(localStorage.getItem("user"));
+  
+    if (userData) {
+      // If user is logged in, set the username and redirect profile link
+      document.getElementById("username").textContent = userData.name; // Display user's name
+      document.getElementById("profile-link").href = "profile.html"; // Redirect to profile
+    } else {
+      // If not logged in, redirect to login page when clicking on profile
+      document.getElementById("profile-link").href = "signin.html"; // Redirect to signin page
+    }
+  };
+  document.getElementById("admin-link").addEventListener("click", function(event) {
+    const existingAdmin = localStorage.getItem("admin");
+
+    // If the admin doesn't exist or the credentials are not found, redirect to sign in page
+    if (!existingAdmin) {
+        alert("You need to log in first!");
+        window.location.href = "signInAdmin.html"; // Redirect to login page
+    } else {
+        window.location.href = "Admin.html"; // Redirect to Admin Dashboard if logged in
+    }
+});

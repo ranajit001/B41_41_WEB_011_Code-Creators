@@ -85,12 +85,16 @@
 <body>
     <div class="container">
         <div class="logo">Quickcart</div>
-        <form>
+        <form id="sign-in-form">
             <div class="form-group">
                 <label for="email">Email or mobile phone number</label>
                 <input type="text" id="email" name="email" placeholder="Enter your email or phone">
             </div>
-            <button type="submit">Continue</button>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            <button type="submit">Sign In</button>
         </form>
         <a href="#">Need help?</a>
         <div class="footer">
@@ -99,3 +103,23 @@
     </div>
 </body>
 </html>
+<script>
+    document.getElementById("sign-in-form").addEventListener("submit", function(event) {
+    event.preventDefault();  // Prevent form from submitting and refreshing the page
+
+    // Get form data
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    // Retrieve the stored user data from localStorage
+    const userData = JSON.parse(localStorage.getItem("user"));
+
+    // Check if the email and password match the stored data
+    if (userData && userData.email === email && userData.password === password) {
+        // Redirect to the profile page if credentials match
+        window.location.href = "profile.html";
+    } else {
+        alert("Invalid credentials! Please try again.");
+    }
+});
+</script>
