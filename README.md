@@ -34,7 +34,7 @@ Allows users to view items for purchase.
 Frontend.
 
 ## Deplolyed App
-Frontend: https://deployed-site.whatever.
+Frontend: https://web205quickcart.netlify.app/
 
 Database: Local storage.
 
