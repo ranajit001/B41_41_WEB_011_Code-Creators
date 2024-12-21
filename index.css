@@ -339,7 +339,12 @@ background-color: white;
   min-width: 20rem;
   
 }
-
+.part3d2>h2{
+  margin-top: 1rem;
+}
+.part3d2>p:nth-child(n){
+ color: #00453e;
+}
 
 /* ----------------------- */
 
@@ -367,6 +372,7 @@ background-color: white;
   height: 100%;
   width: 100%;
 }
+
 
 
 /* last part */
